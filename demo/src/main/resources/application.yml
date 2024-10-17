@@ -1,0 +1,9 @@
+server:
+  port: 8761 # Puerto en el que correrá Eureka Server
+
+eureka:
+  client:
+    register-with-eureka: false # El servidor no se registra a sí mismo
+    fetch-registry: false        # El servidor no necesita obtener información de otros
+  server:
+    enable-self-preservation: false # Desactiva esta opción para evitar problemas de red en desarrollo
